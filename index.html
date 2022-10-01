@@ -294,12 +294,71 @@
               <li class="footer-perm"><a href="" class="footer-welcome"><svg class="footer-svg" viewBox="0 0 32 32" width="20"><use href="./img/sprite.svg#linkedin"></use></svg></a></li>
         </ul>
       </div>
+      <div class="footer-form">
+      <form action="" class="sub-form">
+        <p class="footer-propose">Підпишіться на розсилку</p>
+        <input type="email" id="mail" placeholder="E-mail"/>
+        <button type="submit" class="footer-but">
+          Підписатися <svg class="sub-svg" width="24"><use href="./img/sprite.svg#telegram"></use></svg></button>
+      </form>
+    
       </div>
     </footer>
   <div class="backdrop is-hidden" data-modal>
-    
-    <div class="modal"><button type="button" class="close-button" data-modal-close><svg width="18"><use href="./img/sprite.svg#X"></use></svg></button></div>
+    <div class="modal">
+      <button type="button" class="close-button" data-modal-close><svg width="18"><use href="./img/sprite.svg#X"></use></svg></button>
+      <p class="modal-article">Залиште свої дані, ми вам передзвонимо</p>
+
+      <form action="" class="modal-form">
+
+        <div class="form-element">
+        <label for="name">Ім'я*</label>
+        <div class="input-wrap">
+          <input type="text" name="name" id="name" required />
+        <svg width="12" height="12"><use href="./img/sprite.svg#ihuman"></use></svg>
+      </div>
+      </div>
+        
+      <div class="form-element">
+        <label for="phone-number">Телефон*</label>
+        <div class="input-wrap">
+          <input type="tel"  id="phone-number" required/>
+          <svg width="13" height="13"><use href="./img/sprite.svg#iphone"></use></svg>
+      </div>
+      </div>
+
+      <div class="form-element">
+        <label for="mail">Пошта</label>
+        <div class="input-wrap">
+          <input type="email" id="mail-adress" required/>
+          <svg width="15" height="12"><use href="./img/sprite.svg#imail"></use></svg>
+              </div>
+      </div>
+
+      <div class="form-comment">
+        <label for="text">Коментар</label>
+          <textarea placeholder="Введіть текст" class="textarea" rows="10"></textarea>
+      </div>
+
+<div class="accept">
+  <input type="checkbox" id="accept" name="accept" class="visualy-hidden" required/>
+  <div class="checkbox">
+    <svg width="11" height="8"><use href="./img/sprite.svg#itick"></use></svg>
   </div>
+  <label for="accept">Погоджуюся з розсилкою та приймаю  <a href="./index.html" class="terms">Умови договору</a></label>
+
+</div>
+
+      <button type="submit" class="modal-btn">Відправити</button>
+
+      </form>
+      
+      
+    </div>
+  </div>
+
+  
+
   <script src="./img/js/modal.js"></script>
   </body>
 </html>
